@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.activity.login.LoginActivity">
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include layout="@layout/title_layout"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="167dp">
+
+            <ImageView
+
+                    android:layout_centerInParent="true"
+                    android:layout_width="202dp"
+                    android:layout_height="64dp"/>
+        </RelativeLayout>
+
+
+
+        <com.mango.know.wight.InputItemView
+                android:id="@+id/input_phone"
+                android:layout_marginTop="0dp"
+                app:itemName="手机号码"
+                app:hintText="请输入您的手机号码"
+                app:inputType="number"
+                app:maxLines="11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_code"
+                android:layout_marginTop="12dp"
+                app:itemName="验证码"
+                app:hintText="请输入手机验证码"
+                app:inputType="number"
+                app:maxLines="6"
+                app:isShowMoreCode="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_invite"
+                android:layout_marginTop="12dp"
+                app:itemName="推荐码"
+                app:hintText="请输入推荐人的推荐码"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_password"
+                android:layout_marginTop="12dp"
+                app:maxLines="16"
+                app:itemName="登录密码"
+                app:inputType="password"
+                app:hintText="请设置6-16位的字母或数字密码"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_comfit_password"
+                app:maxLines="16"
+                app:inputType="password"
+                android:layout_marginTop="12dp"
+                app:itemName="确认密码"
+                app:hintText="请再次输入登录密码"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_pay_password"
+                app:maxLines="6"
+                android:layout_marginTop="12dp"
+                app:itemName="支付密码"
+                app:hintText="请设置6位数字支付密码"
+                app:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+
+        <com.mango.know.wight.InputItemView
+
+                android:id="@+id/input_comfit_pay_password"
+                app:inputType="number"
+                app:maxLines="6"
+                android:layout_marginTop="12dp"
+                app:itemName="确认密码"
+                app:hintText="请再次输入您的支付密码"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+        </com.mango.know.wight.InputItemView>
+
+
+        <Button
+                style="@style/SmallButtonThemeStyle"
+                android:text="注册"
+                android:layout_marginTop="26dp"
+                android:id="@+id/tv_register"
+        />
+
+        <LinearLayout
+                android:gravity="center_horizontal"
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_register_agree"
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注册即表示同意《腾付通展业用户协议》"
+
+                    android:textSize="14sp"
+                    />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

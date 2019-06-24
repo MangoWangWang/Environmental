@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="join_shop_dialog_margin">160dp</dimen>
+    <dimen name="live_good_dialog_margin">130dp</dimen>
+    <dimen name="live_auchor_dialog_margin">80dp</dimen>
+    <dimen name="dialog_height">300dp</dimen>
+    <dimen name="dialog_padding">40dp</dimen>
+    <dimen name="dialog_live_padding">32dp</dimen>
+</resources>

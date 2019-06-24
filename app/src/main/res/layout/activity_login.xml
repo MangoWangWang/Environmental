@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.activity.login.LoginActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_marginTop="164dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    >
+
+        <ImageView
+
+
+                android:layout_centerInParent="true"
+                android:layout_width="209dp"
+                android:layout_height="63dp"/>
+    </RelativeLayout>
+
+
+    <com.ruffian.library.widget.REditText
+            android:hint="请输入您的手机号码"
+            android:drawablePadding="10dp"
+
+            android:layout_marginTop="100dp"
+            android:text=""
+
+            android:maxLength="11"
+            android:paddingLeft="14dp"
+            android:background="@null"
+            android:textSize="15sp"
+            android:id="@+id/et_login_phone"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"
+            app:border_width_normal="1dp"
+
+            app:corner_radius="5dp"
+            app:background_normal="@color/white"
+            android:layout_width="307dp"
+            android:layout_height="40dp"/>
+
+
+
+        <com.ruffian.library.widget.REditText
+                android:id="@+id/et_login_password"
+                android:inputType="textPassword"
+                android:hint="请输入您的登录密码"
+                android:drawablePadding="10dp"
+
+                android:layout_marginTop="14dp"
+                android:text=""
+
+                android:maxLength="11"
+                android:paddingLeft="14dp"
+                android:background="@null"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:layout_gravity="center_horizontal"
+                app:border_width_normal="1dp"
+
+                app:corner_radius="5dp"
+                app:background_normal="@color/white"
+                android:layout_width="307dp"
+                android:layout_height="40dp"/>
+    <LinearLayout
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+        <TextView
+                android:id="@+id/tv_login_forget_password"
+                android:layout_marginLeft="51dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="忘记密码？"
+                android:textSize="14sp"
+        />
+
+        <TextView
+                android:layout_marginLeft="48dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="还没有账号？"
+                android:textColor="#FF6C5D6E"
+                android:textSize="14sp"
+        />
+
+        <TextView
+                android:id="@+id/tv_login_register"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="立即注册"
+
+                android:textSize="14sp"
+        />
+
+    </LinearLayout>
+
+    <Button
+            android:layout_marginTop="48dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="登    录"
+            android:id="@+id/tv_login_login"
+            android:layout_width="307dp"
+            android:layout_height="40dp"/>
+
+
+</LinearLayout>

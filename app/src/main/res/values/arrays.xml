@@ -1,0 +1,11 @@
+<resources>
+
+    <!--上到下-->
+    <array name="array_top_bottom">
+        <item>#FF0A497A</item>
+        <item>#FF05253E</item>
+    </array>
+
+
+
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical">
+    <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择查询的时间区间"
+                android:textColor="#FF6C5D6E"
+                android:textSize="20sp"
+                />
+
+        <LinearLayout
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年"
+                    android:textColor="#FF6C5D6E"
+                    android:textSize="17sp"
+                    />
+
+            <TextView
+                    android:layout_marginLeft="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月"
+                    android:textColor="#FF6C5D6E"
+                    android:textSize="17sp"
+                    />
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <FrameLayout
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    <View
+                            android:background="#FFAB50A8"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    <View
+                            android:background="#FFAB50A8"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <com.ycuwq.datepicker.date.YearPicker
+                            android:id="@+id/year_picker"
+                            app:startYear="2018"
+                            app:itemTextSize="17sp"
+                            app:itemTextColor="#898989"
+                            app:zoomInSelectedItem="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            app:halfVisibleItemCount="1"
+                            app:selectedTextColor="#FFAB50A8"
+                            app:wheelCurtain="false"
+                            app:textGradual="false"
+                            app:wheelCurtainBorder="false"
+                            app:wheelCurtainBorderColor="#FFAB50A8" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                    android:layout_marginLeft="36dp"
+                    android:layout_width="62dp"
+                    android:layout_height="match_parent">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp">
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    <View
+                            android:background="#FFAB50A8"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+                    <View
+                            android:background="#FFAB50A8"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"/>
+                    <View
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <com.ycuwq.datepicker.date.MonthPicker
+                            android:id="@+id/month_picker"
+                            app:startYear="2018"
+                            app:itemTextSize="17sp"
+                            app:itemTextColor="#898989"
+                            app:zoomInSelectedItem="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            app:halfVisibleItemCount="1"
+                            app:selectedTextColor="#FFAB50A8"
+                            app:wheelCurtain="false"
+                            app:textGradual="false"
+                            app:wheelCurtainBorder="false"
+                            app:wheelCurtainBorderColor="#FFAB50A8" />
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <com.ruffian.library.widget.RTextView
+                    android:id="@+id/tv_cancel"
+                    app:corner_radius="6dp"
+                    android:textColor="#ffffff"
+                    app:background_normal="#898989"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:layout_width="78dp"
+                    android:layout_height="26dp" />
+            <com.ruffian.library.widget.RTextView
+                    android:id="@+id/tv_sure"
+                    android:layout_marginLeft="22dp"
+                    app:corner_radius="6dp"
+                    android:textColor="#ffffff"
+                    app:background_normal="#FFAB50A8"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:layout_width="78dp"
+                    android:layout_height="26dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
